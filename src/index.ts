@@ -1,4 +1,9 @@
-// TODO: Implement phishing-template-linter
-// Planned exports: lint(template) → { errors, warnings, suggestions }
-
-export {};
+export { lint } from './lint.js';
+export type { EmailTemplate, LintResult, Rule, RuleViolation, Severity } from './types.js';
+export {
+  noMissingTrackingPixel,
+  requireMergeTag,
+  requireUnsubscribeLink,
+  noHighRiskSpamTriggers,
+  requireTextVersion,
+} from './rules/index.js';

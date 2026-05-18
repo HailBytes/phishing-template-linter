@@ -24,12 +24,31 @@
     "url": "https://github.com/HailBytes/phishing-template-linter/issues"
   },
   "homepage": "https://hailbytes.com",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "bin": {
+    "phishing-lint": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
-    "lint": "echo 'No linter configured yet'",
-    "test": "echo 'No tests yet' && exit 0"
+    "lint": "eslint src --ext .ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "typescript": "^5.4.0"
+    "@types/node": "^20.19.41",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
+    "typescript": "^5.9.3",
+    "vitest": "^1.6.1"
   }
 }
