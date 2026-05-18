@@ -1,0 +1,35 @@
+{
+  "name": "@hailbytes/phishing-template-linter",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Lints GoPhish-format email templates for deliverability, tracking, merge tags, and spam triggers.",
+  "type": "module",
+  "license": "MIT",
+  "author": "HailBytes, LLC",
+  "keywords": [
+    "phishing",
+    "gophish",
+    "email-templates",
+    "linter",
+    "security-awareness-training",
+    "deliverability",
+    "mssp",
+    "hailbytes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HailBytes/phishing-template-linter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HailBytes/phishing-template-linter/issues"
+  },
+  "homepage": "https://hailbytes.com",
+  "scripts": {
+    "build": "tsc",
+    "lint": "echo 'No linter configured yet'",
+    "test": "echo 'No tests yet' && exit 0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
