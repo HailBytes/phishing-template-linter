@@ -7,5 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-05-19
+
+### Fixed
+- Workflow: removed npm cache requirement to fix publish pipeline
+
+## [1.0.1]
+
 ### Added
 - Initial scaffold
