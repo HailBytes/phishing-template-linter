@@ -38,3 +38,6 @@ const result = lint(template);
 ## Links
 
 - [hailbytes.com](https://hailbytes.com)
+---
+
+*Part of the [HailBytes](https://hailbytes.com) open-source security toolkit.*
