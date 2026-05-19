@@ -23,6 +23,8 @@
     "url": "https://github.com/HailBytes/phishing-template-linter/issues"
   },
   "homepage": "https://hailbytes.com",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -33,7 +35,9 @@
     "phishing-lint": "dist/cli.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsc",
