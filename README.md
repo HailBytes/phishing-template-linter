@@ -2,19 +2,20 @@
 
 > Lints GoPhish-format email templates for deliverability, tracking, merge tags, and spam triggers.
 
-![Status: Incubation — not yet published to npm](https://img.shields.io/badge/Status-Incubation%20%E2%80%94%20not%20yet%20published%20to%20npm-yellow)
+[![npm version](https://img.shields.io/npm/v/%40hailbytes%2Fphishing-template-linter.svg)](https://www.npmjs.com/package/%40hailbytes%2Fphishing-template-linter)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## Planned npm Package
+## Install
 
-```
+```bash
 npm install @hailbytes/phishing-template-linter
 ```
 
-## Planned Audience
+## Who Is This For
 
 MSSPs, red teamers, and security-awareness trainers managing GoPhish campaign templates who want automated quality checks before deployment.
 
-## Planned API Sketch
+## API
 
 ### CLI
 ```bash
