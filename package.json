@@ -1,6 +1,6 @@
 {
   "name": "@hailbytes/phishing-template-linter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lints GoPhish-format email templates for deliverability, tracking, merge tags, and spam triggers.",
   "type": "module",
   "license": "MIT",
