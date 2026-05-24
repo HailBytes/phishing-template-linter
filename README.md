@@ -1,4 +1,6 @@
 # @hailbytes/phishing-template-linter
+![npm](https://img.shields.io/npm/dt/@hailbytes/phishing-template-linter)
+
 
 > Lints GoPhish-format email templates for deliverability, tracking, merge tags, and spam triggers. Companion to HailBytes SAT.
 
