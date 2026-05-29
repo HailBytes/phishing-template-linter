@@ -8,6 +8,7 @@
 [![npm downloads](https://img.shields.io/npm/dw/%40hailbytes%2Fphishing-template-linter.svg)](https://www.npmjs.com/package/@hailbytes/phishing-template-linter)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/%40hailbytes%2Fphishing-template-linter)](https://bundlephobia.com/package/@hailbytes/phishing-template-linter)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-davidhailbytes-blue?logo=linkedin&style=flat)](https://www.linkedin.com/in/davidhailbytes/)
 
 ---
 
