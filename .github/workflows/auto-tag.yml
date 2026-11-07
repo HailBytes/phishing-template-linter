@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
 
+# Queue (never run in parallel) so back-to-back pushes cannot race for the same tag.
+concurrency:
+  group: auto-tag
+  cancel-in-progress: false
+
 jobs:
   ci-and-tag:
     name: Test, Build & Tag
@@ -48,6 +53,12 @@ jobs:
           IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT"
           NEW_VERSION="$MAJOR.$MINOR.$((PATCH + 1))"
 
+          if [ -n "$(git tag --points-at HEAD 'v*')" ]; then
+            echo "HEAD already tagged; nothing to do"; exit 0
+          fi
+          while git rev-parse -q --verify "refs/tags/v$NEW_VERSION" >/dev/null; do
+            PATCH=$((PATCH + 1)); NEW_VERSION="$MAJOR.$MINOR.$PATCH"
+          done
           git tag "v$NEW_VERSION"
           git push origin "v$NEW_VERSION"
           echo "Tagged HEAD as v$NEW_VERSION"
